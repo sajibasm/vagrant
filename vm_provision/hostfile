@@ -1,0 +1,15 @@
+<VirtualHost *:80>
+  ServerAdmin webmaster@localhost
+  DocumentRoot /home/vagrant/code/www/
+
+  ErrorLog  /home/vagrant/code/log/error.log
+  CustomLog /home/vagrant/code/log/access.log combined
+
+<Directory />
+    Options Indexes FollowSymLinks Includes ExecCGI
+    AllowOverride All
+    Require all granted
+    Allow from all
+</Directory>
+  
+</VirtualHost>
